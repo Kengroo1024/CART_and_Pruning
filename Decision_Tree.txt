@@ -1,3 +1,5 @@
+'''剪枝后的树'''
+{
 left: (infoavail, 3)
     left: (policetrust, 2)
         left: (streetquality, 2)
@@ -22,3 +24,170 @@ left: (infoavail, 3)
         right: False
     right: True
 right: False
+}
+'''剪枝前的树'''
+{
+left: (infoavail, 3)
+    left: (policetrust, 2)
+        left: (streetquality, 2)
+            left: (infoavail, 5)
+                left: (schoolquality, 2)
+                    left: (policetrust, 5)
+                        left: (schoolquality, 3)
+                            left: (housecost, 2)
+                                left: (schoolquality, 4)
+                                    left: (housecost, 5)True
+                                    right: 
+                                        left: (housecost, 4)True
+                                        right: 
+                                            left: (schoolquality, 5)
+                                                left: (housecost, 3)True
+                                                right: True
+                                            right: 
+                                                left: (housecost, 3)False
+                                                right: 
+                                                    left: (streetquality, 5)True
+                                                    right: True
+                                right: 
+                                    left: (housecost, 5)True
+                                    right: True
+                            right: True
+                        right: True
+                    right: 
+                        left: (schoolquality, 5)False
+                        right: 
+                            left: (housecost, 5)True
+                            right: 
+                                left: (policetrust, 3)
+                                    left: (schoolquality, 4)
+                                        left: (housecost, 2)
+                                            left: (housecost, 3)
+                                                left: (housecost, 4)
+                                                    left: (policetrust, 4)True
+                                                    right: True
+                                                right: 
+                                                    left: (policetrust, 4)True
+                                                    right: True
+                                            right: 
+                                                left: (policetrust, 4)True
+                                                right: True
+                                        right: True
+                                    right: 
+                                        left: (housecost, 4)
+                                            left: (schoolquality, 3)False
+                                            right: False
+                                        right: 
+                                            left: (housecost, 2)
+                                                left: (schoolquality, 3)
+                                                    left: (streetquality, 4)
+                                                        left: (policetrust, 4)
+                                                            left: (housecost, 3)True
+                                                            right: True
+                                                        right: 
+                                                            left: (housecost, 3)True
+                                                            right: False
+                                                    right: 
+                                                        left: (policetrust, 4)False
+                                                        right: 
+                                                            left: (housecost, 3)
+                                                                left: (streetquality, 3)True
+                                                                right: False
+                                                            right: 
+                                                                left: (streetquality, 3)False
+                                                                right: False
+                                                right: True
+                                            right: 
+                                                left: (schoolquality, 3)
+                                                    left: (policetrust, 4)True
+                                                    right: True
+                                                right: False
+                                right: True
+                right: False
+            right: 
+                left: (policetrust, 3)
+                    left: (schoolquality, 5)
+                        left: (infoavail, 4)False
+                        right: False
+                    right: 
+                        left: (streetquality, 5)True
+                        right: 
+                            left: (policetrust, 5)
+                                left: (infoavail, 4)
+                                left: False
+                                right: 
+                                    left: (housecost, 3)False
+                                    right: False
+                            right: 
+                                left: (housecost, 3)
+                                    left: (schoolquality, 4)
+                                        left: (housecost, 4)False
+                                        right: False
+                                    right: 
+                                        left: (schoolquality, 3)
+                                            left: (streetquality, 4)
+                                                left: (housecost, 4),False
+                                                right: False
+                                            right: 
+                                                left: (infoavail, 4)
+                                                    left: (streetquality, 3)
+                                                        left: (housecost, 4)
+                                                        left: False
+                                                        right: 
+                                                            left: (policetrust, 4)True
+                                                            right: False
+                                                    right: 
+                                                        left: (policetrust, 4)
+                                                            left: (housecost, 4)True
+                                                            right: False
+                                                        right: True
+                                                right: 
+                                                    left: (housecost, 4)False
+                                                    right: 
+                                                        left: (policetrust, 4)
+                                                        left: False
+                                                        right: False
+                                        right: 
+                                            left: (streetquality, 3)
+                                                left: (infoavail, 4)
+                                                    left: (streetquality, 4)True
+                                                    right: True
+                                                right: True
+                                            right: 
+                                                left: (infoavail, 4)False
+                                                right: False
+                                right: 
+                                    left: (schoolquality, 2)
+                                        left: (schoolquality, 3)
+                                            left: (housecost, 2)
+                                                left: (schoolquality, 4)
+                                                    left: (streetquality, 4)
+                                                        left: (policetrust, 4)
+                                                            left: (infoavail, 4)False
+                                                            right: True
+                                                        right: True
+                                                    right: True
+                                                right: 
+                                                    left: (streetquality, 4)
+                                                        left: (infoavail, 4)True
+                                                        right: False
+                                                    right: False
+                                            right: 
+                                                left: (schoolquality, 4)False
+                                                right: 
+                                                    left: (policetrust, 4)False
+                                                    right: False
+                                        right: 
+                                            left: (infoavail, 4)True
+                                            right: True
+                                    right: False
+                right: False
+        right: 
+            left: (infoavail, 4)False
+            right: 
+                left: (housecost, 4)False
+                right: 
+                    left: (schoolquality, 3)False
+                    right: False
+    right: True
+right: False
+}
